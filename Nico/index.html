@@ -861,7 +861,44 @@ margin-top:40px;
 flex-wrap: wrap;
 align-items: center;
 }
+.featured-project {
+    background: rgba(63, 63, 70, 0.85);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 50px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
 
+.featured-project:hover {
+    border-color: var(--primary);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(113,145,170,0.18);
+}
+
+.project-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.952);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.project-desc {
+    color: var(--text-muted);
+    line-height: 1.9;
+    font-size: 0.95rem;
+    max-width: 900px;
+}
+
+@media (max-width:768px){
+    .featured-project{
+        padding:30px 24px;
+    }
+}
 </style>
 </head>
 <body>
@@ -1168,7 +1205,47 @@ As I prepare for my professional career, I look forward to opportunities where I
 </div>
 </div>
 </section>
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects">
+<div class="container">
 
+<div class="section-header fade-up">
+<span class="section-tag" style="display:block;text-align:center;">Projects</span>
+<div class="divider divider-center"></div>
+<h2 class="section-title">Featured Project</h2>
+</div>
+
+<div class="featured-project fade-up">
+
+
+<div class="project-image">
+    <img src="H2GO.jpg" alt="H2GO">
+</div>
+<h3 style="
+font-size:1.8rem;
+font-weight:700;
+margin-bottom:18px;
+color:var(--text);
+">
+H2GO 
+</h3>
+
+<p class="project-desc">
+H2GO is a modern water delivery management platform designed to provide customers with a fast, reliable, and convenient way to order water online. The system enables users to schedule on-demand deliveries, track their orders in real time, receive delivery notifications, and enjoy transparent geofence-based pricing. By connecting customers with delivery riders through an intuitive web interface, H2GO streamlines the entire water delivery process, ensuring timely service, improved customer satisfaction, and efficient delivery management.
+</p>
+
+<div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+<span class="tech-tag">Capstone Project</span>
+<span class="tech-tag">Real-Time Tracking</span>
+<span class="tech-tag">Business Solution</span>
+<span class="tech-tag">Geofence Pricing</span>
+<span class="tech-tag">Scalable Platform</span>
+</div>
+
+</div>
+
+</div>
+</section>
 <!-- ===================== PROJECTS ===================== -->
 <section id="projects">
 <div class="container">
